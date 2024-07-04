@@ -1,8 +1,66 @@
-.menuItem {
-  color: green;
+.homeComponent {
+  background-image: url("../../../images/weather.jpg");
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.mainMenu {
+.greeting {
+  font-family: Copperplate, Papyrus, fantasy;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.heading {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #236adb;
+}
+
+.ima {
+  font-family: Garamond, serif;
+  margin-bottom: 10px;
+  color: #e6e21c;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.menuItem {
+  background-color: lightgray;
+  height: 120px;
+  width: 120px;
+  border-radius: 12px;
+  box-shadow: 20px 20px 50px grey;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.des {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #e6e21c;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.menuItem:hover {
+  width: 125px;
+  height: 125px;
+}
+
+.menuImg {
+  width: 100%;
+  border-radius: 20px;
 }
