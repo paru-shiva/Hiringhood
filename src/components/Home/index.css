@@ -1,3 +1,8 @@
 .menuItem {
   color: green;
 }
+
+.mainMenu {
+  display: flex;
+  justify-content: center;
+}
