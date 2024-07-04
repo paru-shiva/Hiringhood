@@ -6,3 +6,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuItem {
+  margin: 20px;
+}

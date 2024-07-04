@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { Route, Link, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./components/Home";
+import Farmer from "./components/Farmer";
 
 function App() {
   return (
     <div className="appComponent">
-      <h1>Weather to Work Out</h1>
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/farmers" Component={Farmer} />
+      </Routes>
     </div>
   );
 }
