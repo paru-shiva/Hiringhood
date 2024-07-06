@@ -3,37 +3,42 @@ import { format } from "date-fns";
 import "./index.css";
 import WeatherStats from "../WeatherStats";
 import WeeklyStats from "../WeeklyStats";
+import Search from "../Search";
 
 const Farmer = () => {
   const [weatherData, modifyWeatherData] = useState([]);
   const [fetchStatus, changeFetchStatus] = useState("loading");
   const [place, changePlace] = useState("Hyderabad");
-  const [date, changeDate] = useState(format(new Date(), "yyyy-MM-dd"));
 
-  useEffect(() => {
-    const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=2a4b4962a62b47f5b47162651240407&q=${place}&days=10&aqi=yes&alerts=yes`;
-    const fetchWeatherData = async () => {
-      const response = await fetch(baseUrl);
-      if (response.ok === true) {
-        changeFetchStatus("success");
-        modifyWeatherData(await response.json());
-      } else {
-        changeFetchStatus("failed");
-        modifyWeatherData(await response.json());
-      }
-    };
-    fetchWeatherData();
-  }, []);
+  const onChangePlace = (ip) => {
+    changePlace(ip);
+  };
 
   return (
     <div className="farmerComponent">
       <div className="todaysInfo">
-        <WeatherStats />
-        <div className="secondCard">card 2 content</div>
-        <div className="thirdCard">card 3 content</div>
+        <WeatherStats place={place} />
+        <div className="instructionsCard">
+          <h2>
+            <u>** Instructions Customized For You **</u>
+          </h2>
+
+          <ul>
+            <li>
+              <p>This is point one</p>
+            </li>
+            <li>
+              <p>This is point one</p>
+            </li>
+            <li>
+              <p>This is point one</p>
+            </li>
+          </ul>
+        </div>
+        <Search changePlace={onChangePlace} />
       </div>
       <div className="weeklyInfo">
-        <WeeklyStats />
+        <WeeklyStats place={place} />
       </div>
     </div>
   );

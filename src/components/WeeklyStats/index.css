@@ -1,6 +1,6 @@
 .weeklyCards {
   display: flex;
+  width: 98vw;
   justify-content: space-around;
-  width: 100vw;
   align-items: center;
 }

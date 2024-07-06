@@ -16,8 +16,8 @@ const WeeklyCard = (props) => {
 
   return (
     <div className="weeklyCardComponent">
-      <p className="weekCardPara">{date}</p>
-      <img src={icon} />
+      <p className="weekCardPara cardDate">{date}</p>
+      <img className="weeklyIcon" src={icon} />
       <p className="weekCardPara">{text}</p>
       <p className="weekCardPara">{`Min ${mintemp_c}°C / ${mintemp_f}°F`}</p>
       <p className="weekCardPara">{`Max ${maxtemp_c}°C / ${maxtemp_f}°F`}</p>

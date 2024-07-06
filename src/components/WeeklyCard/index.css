@@ -3,12 +3,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background: rgba(63, 193, 201, 1);
   border-radius: 8px;
   padding: 8px;
+  text-align: center;
 }
 
 .weekCardPara {
   margin: 0px;
+  font-size: 13px;
+  color: white;
+}
+
+.cardDate {
+  color: yellow;
   font-size: 14px;
+  font-weight: bold;
+}
+
+.weeklyIcon {
+  width: 30px;
 }

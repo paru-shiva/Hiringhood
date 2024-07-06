@@ -1,0 +1,36 @@
+.searchComponent {
+  background-color: #364f6b;
+  height: 400px;
+  width: 20vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cityInput {
+  height: 28px;
+  width: 200px;
+  padding: 0px 4px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.forcastBtn {
+  border: none;
+  outline: none;
+  background-color: #3fc1c9;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.searchHeading {
+  margin-top: 0px;
+  color: #ffc436;
+}

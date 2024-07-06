@@ -4,8 +4,8 @@ import "./index.css";
 const Home = () => {
   return (
     <div className="homeComponent">
-      <h2 className="greeting">Hello.. Welcome To</h2>
-      <h1 className="heading"> Weather to Work Out </h1>
+      <h2 className="greeting">🌧️☀️☁️🌤️❄️⛅🌩️🌥️</h2>
+      <h1 className="heading"> Weather to Work Out ? </h1>
       <h3 className="ima">I'm</h3>
       <div className="mainMenu">
         <Link to="/farmer">
