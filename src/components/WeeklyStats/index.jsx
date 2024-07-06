@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import "./index.css";
-import WeatherStats from "../WeatherStats";
-import WeeklyStats from "../WeeklyStats";
+import WeeklyCard from "../WeeklyCard";
 
-const Farmer = () => {
+const WeeklyStats = () => {
   const [weatherData, modifyWeatherData] = useState([]);
   const [fetchStatus, changeFetchStatus] = useState("loading");
   const [place, changePlace] = useState("Hyderabad");
@@ -25,18 +24,18 @@ const Farmer = () => {
     fetchWeatherData();
   }, []);
 
-  return (
-    <div className="farmerComponent">
-      <div className="todaysInfo">
-        <WeatherStats />
-        <div className="secondCard">card 2 content</div>
-        <div className="thirdCard">card 3 content</div>
+  const currentData = weatherData.current;
+
+  if (currentData !== undefined) {
+    const dataReceived = weatherData.forecast.forecastday;
+    return (
+      <div className="weeklyCards">
+        {dataReceived.map((eachItem) => {
+          return <WeeklyCard key={eachItem.date} data={eachItem} />;
+        })}
       </div>
-      <div className="weeklyInfo">
-        <WeeklyStats />
-      </div>
-    </div>
-  );
+    );
+  }
 };
 
-export default Farmer;
+export default WeeklyStats;

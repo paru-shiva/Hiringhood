@@ -1,92 +1,48 @@
 .farmerComponent {
-  min-height: 100vh;
-  width: 100vw;
-  background-image: url("../../../images/farming-land.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../../images/farmerBg.jpeg);
   background-size: cover;
-  color: white;
+}
+
+.todaysInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  align-items: center;
+  height: 75vh;
+}
+
+.weeklyInfo {
+  display: flex;
+  height: 25vh;
+}
+
+.firstCard {
+  background-color: #22b2f0;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  font-family: Garamond, serif;
+  padding: 15px;
   align-items: center;
 }
 
-.farmersHeading {
-  margin-top: 40px;
-}
-
-.inputsDiv {
-  display: flex;
-  align-items: center;
-}
-
-.inputBox {
-  height: 25px;
-  width: 190px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.dateBox {
-  height: 28px;
-}
-
-.humidity {
-  margin: 100px;
-}
-
-.inputLabel {
-  font-size: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.forcastBtn {
-  height: 28px;
-  margin: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: white;
-  border-radius: 8px;
-  text-align: center;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.piechart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-}
-
-.pieAndData {
+.actualWeather {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
 }
 
-.temps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.currentTempIcon {
+  width: 30px;
+  margin-left: 5px;
 }
 
-.tempdata {
-  font-size: 22px;
-}
-
-.tempAndHumidity {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.infoParas {
+  margin: 8px;
 }

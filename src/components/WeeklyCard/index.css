@@ -1,0 +1,14 @@
+.weeklyCardComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.weekCardPara {
+  margin: 0px;
+  font-size: 14px;
+}
