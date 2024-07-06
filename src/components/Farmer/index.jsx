@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+
 import { format } from "date-fns";
+
 import "./index.css";
 import WeatherStats from "../WeatherStats";
 import WeeklyStats from "../WeeklyStats";

@@ -121,7 +121,7 @@ const Traveller = () => {
   };
 
   return (
-    <div className="farmerComponent">
+    <div className="travellerComponent">
       <div className="todaysInfo">
         <WeatherStats place={place} />
         {renderInstructionsCard()}

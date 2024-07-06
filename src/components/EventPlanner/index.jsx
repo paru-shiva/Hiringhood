@@ -120,7 +120,7 @@ const EventPlanner = () => {
   };
 
   return (
-    <div className="farmerComponent">
+    <div className="eventplannerComponent">
       <div className="todaysInfo">
         <WeatherStats place={place} />
         {renderInstructionsCard()}

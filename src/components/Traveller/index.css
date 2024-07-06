@@ -1,10 +1,10 @@
-.farmerComponent {
+.travellerComponent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(../../images/farmerBg.jpeg);
+  background-image: url("../../images/travellerBg.jpeg");
   background-size: cover;
 }
 
