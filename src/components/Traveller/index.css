@@ -13,12 +13,12 @@
   justify-content: space-around;
   width: 100vw;
   align-items: center;
-  height: 75vh;
+  height: 65vh;
 }
 
 .weeklyInfo {
   display: flex;
-  height: 25vh;
+  height: 30vh;
 }
 
 .actualWeather {
