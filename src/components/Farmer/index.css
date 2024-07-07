@@ -1,5 +1,6 @@
 .farmerComponent {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -22,11 +23,13 @@
   width: 100vw;
   align-items: center;
   height: 65vh;
+  flex-wrap: wrap;
 }
 
 .weeklyInfo {
   display: flex;
   height: 30vh;
+  flex-wrap: wrap;
 }
 
 .actualWeather {
