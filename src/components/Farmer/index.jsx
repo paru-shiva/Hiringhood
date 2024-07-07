@@ -22,7 +22,6 @@ const Farmer = () => {
         modifyWeatherData(await response.json());
       } else {
         changeFetchStatus("failed");
-        modifyWeatherData(await response.json());
       }
     };
     fetchWeatherData();
@@ -46,6 +45,7 @@ const Farmer = () => {
         case "success":
           return (
             <div className="instructionsCard">
+              <h2 className="secHeading">Hello Dear Farmer</h2>
               <h2>
                 <u>** Instructions Customized For You **</u>
               </h2>
@@ -121,6 +121,18 @@ const Farmer = () => {
           break;
 
         default:
+          return (
+            <div
+              style={{
+                backgroundColor: "darkblue",
+                color: "white",
+                padding: "15px",
+              }}
+            >
+              <p>Ciy Data Not Available</p> <p>Enter Valid City</p>
+              <p>Try Reloading</p>
+            </div>
+          );
           break;
       }
     }

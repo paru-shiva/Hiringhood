@@ -16,6 +16,14 @@
   height: 65vh;
 }
 
+.secHeading {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: yellow;
+}
+
 .weeklyInfo {
   display: flex;
   height: 30vh;

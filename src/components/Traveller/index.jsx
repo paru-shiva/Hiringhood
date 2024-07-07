@@ -20,7 +20,6 @@ const Traveller = () => {
         modifyWeatherData(await response.json());
       } else {
         changeFetchStatus("failed");
-        modifyWeatherData(await response.json());
       }
     };
     fetchWeatherData();
@@ -44,6 +43,7 @@ const Traveller = () => {
         case "success":
           return (
             <div className="instructionsCard">
+              <h2 className="secHeading">Hello Dear Traveller</h2>
               <h2>
                 <u>** Instructions Customized For You **</u>
               </h2>

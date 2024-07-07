@@ -8,6 +8,14 @@
   background-size: cover;
 }
 
+.secHeading {
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: yellow;
+}
+
 .todaysInfo {
   display: flex;
   justify-content: space-around;

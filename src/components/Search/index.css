@@ -10,15 +10,21 @@
   justify-content: center;
 }
 
+.homeLink {
+  color: yellow;
+}
+
 .desDiv {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .desImg {
-  width: 90%;
+  width: 80%;
   border-radius: 12px;
 }
 
