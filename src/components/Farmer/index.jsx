@@ -46,7 +46,7 @@ const Farmer = () => {
           return (
             <div className="instructionsCard">
               <h2 className="secHeading">Hello Dear Farmer</h2>
-              <h2>
+              <h2 className="custInst">
                 <u>** Instructions Customized For You **</u>
               </h2>
 
