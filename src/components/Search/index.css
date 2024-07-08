@@ -1,7 +1,6 @@
 .searchComponent {
   background-color: #364f6b;
   min-height: 400px;
-  min-width: 30vw;
   margin: 40px;
   border-radius: 20px;
   display: flex;
@@ -55,11 +54,10 @@
   color: #ffc436;
 }
 
-@media (max-width: 1200px){
-  .searchComponent{
+@media (max-width: 1200px) {
+  .searchComponent {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: auto;
     text-align: center;
     margin: 20px;

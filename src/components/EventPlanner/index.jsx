@@ -121,15 +121,19 @@ const EventPlanner = () => {
 
   return (
     <div className="eventplannerComponent">
-      <div className="todaysInfo">
-        <div className="presentInfo">
-        <WeatherStats place={place} />
-        {renderInstructionsCard()}
+      <div className="presentInfo">
+        <div className="weather-stats">
+          <WeatherStats place={place} />
         </div>
-        <Search changePlace={onChangePlace} />
+        <div className="instructions-card">{renderInstructionsCard()}</div>
       </div>
+
       <div className="weeklyInfo">
         <WeeklyStats place={place} />
+      </div>
+
+      <div className="searchCom">
+        <Search changePlace={onChangePlace} />
       </div>
     </div>
   );

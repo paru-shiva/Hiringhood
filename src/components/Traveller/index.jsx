@@ -121,14 +121,20 @@ const Traveller = () => {
   };
 
   return (
-    <div className="travellerComponent">
-      <div className="todaysInfo">
-        <WeatherStats place={place} />
-        {renderInstructionsCard()}
-        <Search changePlace={onChangePlace} />
+    <div className="eventplannerComponent">
+      <div className="presentInfo">
+        <div className="weather-stats">
+          <WeatherStats place={place} />
+        </div>
+        <div className="instructions-card">{renderInstructionsCard()}</div>
       </div>
+
       <div className="weeklyInfo">
         <WeeklyStats place={place} />
+      </div>
+
+      <div className="searchCom">
+        <Search changePlace={onChangePlace} />
       </div>
     </div>
   );

@@ -35,14 +35,12 @@ const WeeklyStats = ({ place }) => {
       case "success":
         if (currentData !== undefined) {
           let dataReceived = weatherData.forecast.forecastday;
-          dataReceived = dataReceived.slice(0,7)
+          dataReceived = dataReceived.slice(0, 7);
           return (
-            <div className="main-div">
             <div className="weeklyCards">
               {dataReceived.map((eachItem) => {
                 return <WeeklyCard key={eachItem.date} data={eachItem} />;
               })}
-            </div>
             </div>
           );
         }

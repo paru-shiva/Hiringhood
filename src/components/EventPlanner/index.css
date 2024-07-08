@@ -9,19 +9,25 @@
   background-size: cover;
 }
 
-.todaysInfo {
+.presentInfo {
   display: flex;
+  margin: 50px 0px;
+  width: 90vw;
   justify-content: space-around;
-  width: 95vw;
   align-items: center;
-  min-height: 65vh;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin-bottom: 0px;
 }
 
-.presentInfo{
-  display: flex;
+.searchCom {
+  width: 80vw;
+  margin-bottom: 50px;
+}
+
+.weather-stats {
+  width: 30vw;
+}
+
+.instructions-card {
+  width: 50vw;
 }
 
 .secHeading {
@@ -34,15 +40,15 @@
 
 .weeklyInfo {
   display: flex;
-  min-height: 30vh;
+  justify-content: center;
+  width: 100vw;
+  min-height: auto;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .actualWeather {
   background-color: #364f6b;
   min-height: 400px;
-  min-width: 95vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -51,7 +57,7 @@
   justify-content: center;
 }
 
-.custInst{
+.custInst {
   font-size: 20px;
 }
 
@@ -67,7 +73,7 @@
 .instructionsCard {
   background-color: #364f6b;
   min-height: 400px;
-  min-width: 30vw;
+
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -77,20 +83,19 @@
 }
 
 @media (max-width: 1200px) {
-  .actualWeather{
+  .presentInfo {
     display: flex;
     flex-direction: column;
+    margin: 0 0px;
+    box-sizing: border-box;
     width: 90vw;
-    height: auto;
-    margin: 20px;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
   }
-  .instructionsCard{
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: auto;
-    text-align: center;
+  .weather-stats {
+    width: 100%;
   }
-  
+  .instructions-card {
+    width: 100%;
+  }
 }

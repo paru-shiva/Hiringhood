@@ -1,7 +1,6 @@
 .firstCard {
   background-color: #364f6b;
   height: 400px;
-  width: 20vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -11,8 +10,7 @@
 }
 
 @media (max-width: 1200px) {
-  .firstCard{
-    width: 80vw;
+  .firstCard {
     margin: 15px;
     padding: 50px;
   }
