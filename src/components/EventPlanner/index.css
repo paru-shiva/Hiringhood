@@ -42,7 +42,7 @@
 .actualWeather {
   background-color: #364f6b;
   min-height: 400px;
-  min-width: 30vw;
+  min-width: 95vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
