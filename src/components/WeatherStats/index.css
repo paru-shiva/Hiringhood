@@ -10,8 +10,17 @@
   align-items: center;
 }
 
-.actualWeather {
+@media (max-width: 1200px) {
+  .firstCard{
+    width: 80vw;
+    margin: 15px;
+    padding: 50px;
+  }
+}
+
+.actualWeatherr {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

@@ -47,7 +47,7 @@ const WeatherStats = ({ place }) => {
         return (
           <div className="firstCard">
             <h2 className="todaysWeatherHeading">:: Current Weather ::</h2>
-            <div className="actualWeather">
+            <div className="actualWeatherr">
               <p className="infoParas">{`Temp ${temp_c} °C / ${temp_f} °F`}</p>
               <img className="currentTempIcon" src={currentImage} />
             </div>

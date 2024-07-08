@@ -4,57 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../../images/farmerBg.jpeg");
   background-size: cover;
-}
-
-.secHeading {
-  font-family: Copperplate, Papyrus, fantasy;
-  font-weight: bold;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  color: yellow;
-}
-
-.todaysInfo {
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  align-items: center;
-  height: 65vh;
-  flex-wrap: wrap;
-}
-
-.weeklyInfo {
-  display: flex;
-  height: 30vh;
-  flex-wrap: wrap;
-}
-
-.actualWeather {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.currentTempIcon {
-  width: 30px;
-  margin-left: 5px;
-}
-
-.infoParas {
-  margin: 8px;
-}
-
-.instructionsCard {
-  background-color: #364f6b;
-  height: 400px;
-  width: 42vw;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
 }

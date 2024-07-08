@@ -44,7 +44,7 @@ const EventPlanner = () => {
           return (
             <div className="instructionsCard">
               <h2 className="secHeading">Hello Dear EventPlanner</h2>
-              <h2>
+              <h2 className="custInst">
                 <u>** Instructions Customized For You **</u>
               </h2>
 

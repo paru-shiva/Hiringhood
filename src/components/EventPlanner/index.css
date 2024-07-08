@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../../images/eventplannerBg.jpg");
   background-size: cover;
 }
@@ -12,10 +12,11 @@
 .todaysInfo {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  width: 95vw;
   align-items: center;
-  height: 65vh;
+  min-height: 65vh;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .secHeading {
@@ -28,14 +29,25 @@
 
 .weeklyInfo {
   display: flex;
-  height: 30vh;
+  min-height: 30vh;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .actualWeather {
+  background-color: #364f6b;
+  height: 400px;
+  width: 42vw;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
   align-items: center;
+  justify-content: center;
+}
+
+.custInst{
+  font-size: 20px;
 }
 
 .currentTempIcon {
@@ -57,4 +69,23 @@
   padding: 20px;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .actualWeather{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+  }
+  .instructionsCard{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    text-align: center;
+  }
+  
 }
