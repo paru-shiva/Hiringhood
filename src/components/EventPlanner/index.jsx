@@ -122,8 +122,10 @@ const EventPlanner = () => {
   return (
     <div className="eventplannerComponent">
       <div className="todaysInfo">
+        <div className="presentInfo">
         <WeatherStats place={place} />
         {renderInstructionsCard()}
+        </div>
         <Search changePlace={onChangePlace} />
       </div>
       <div className="weeklyInfo">
