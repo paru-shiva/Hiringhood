@@ -5,6 +5,7 @@
   align-items: center;
   background: rgba(63, 193, 201, 1);
   border-radius: 8px;
+  box-sizing: border-box;
   padding: 8px;
   text-align: center;
 }
@@ -26,11 +27,11 @@
 }
 
 @media (max-width: 1200px) {
-  .weeklyCardComponent{
+  .weeklyCardComponent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     margin-top: 20px;
-  }  
+  }
 }

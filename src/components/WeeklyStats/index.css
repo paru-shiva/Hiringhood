@@ -1,7 +1,8 @@
 .weeklyCards {
   display: flex;
-  width: 80vw;
+  width: 72vw;
   flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: space-around;
   align-items: center;
 }
