@@ -31,7 +31,7 @@ const Search = ({ changePlace }) => {
           <img className="desImg" src="../../../images/farmerimage.jpg" />
           <p>Not a {designation}? click here for Homepage</p>
           <Link className="homeLink" to="/">
-            Home Page
+          →→→→ Home Page ←←←←
           </Link>
         </div>
       );
@@ -51,7 +51,7 @@ const Search = ({ changePlace }) => {
           <img className="desImg" src="../../../images/travellerimage.jpg" />
           <p>Not a {designation}? click here for Homepage</p>
           <Link className="homeLink" to="/">
-            Home Page
+          →→→→→   Home Page ←←←←←
           </Link>
         </div>
       );

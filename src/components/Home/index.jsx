@@ -7,25 +7,27 @@ const Home = () => {
       <h2 className="greeting">🌧️☀️☁️🌤️❄️⛅🌩️🌥️</h2>
       <h1 className="heading"> Weather to Work Out ? </h1>
       <h3 className="ima">I'm</h3>
+
       <div className="mainMenu">
-        <Link to="/farmer">
-          <div className="menuItem">
+        
+        <div className="menuItem"> 
+        <Link to="/farmer">          
             <img className="menuImg" src="../../../images/farmer.jpg" />
-            <p className="des">Farmer</p>
-          </div>
-        </Link>
-        <Link to="/traveller">
-          <div className="menuItem">
+            <p className="des">Farmer</p>          
+        </Link></div>
+        
+        <div className="menuItem">
+        <Link to="/traveller">          
             <img className="menuImg" src="../../../images/traveller.jpg" />
-            <p className="des">Traveller</p>
-          </div>
-        </Link>
-        <Link to="/eventplanner">
-          <div className="menuItem">
+            <p className="des">Traveller</p>          
+        </Link></div>
+        
+        <div className="menuItem">
+        <Link to="/eventplanner">          
             <img className="menuImg" src="../../../images/event.jpg" />
-            <p className="des">Planning an Event</p>
-          </div>
-        </Link>
+            <p className="des">Planning an Event</p>          
+        </Link></div>
+
       </div>
     </div>
   );

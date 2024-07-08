@@ -17,6 +17,7 @@
   min-height: 65vh;
   flex-wrap: wrap;
   padding: 20px;
+  margin-bottom: 0px;
 }
 
 .secHeading {
@@ -36,8 +37,8 @@
 
 .actualWeather {
   background-color: #364f6b;
-  height: 400px;
-  width: 42vw;
+  min-height: 400px;
+  min-width: 30vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -61,8 +62,8 @@
 
 .instructionsCard {
   background-color: #364f6b;
-  height: 400px;
-  width: 42vw;
+  min-height: 400px;
+  min-width: 30vw;
   border-radius: 20px;
   display: flex;
   flex-direction: column;

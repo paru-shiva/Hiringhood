@@ -1,13 +1,15 @@
 .searchComponent {
   background-color: #364f6b;
-  height: 400px;
-  width: 20vw;
+  min-height: 400px;
+  min-width: 30vw;
+  margin: 40px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0px;
 }
 
 .homeLink {
