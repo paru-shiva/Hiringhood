@@ -1,6 +1,6 @@
 .weeklyCards {
   display: flex;
-  width: 72vw;
+  width: 90vw;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-around;
