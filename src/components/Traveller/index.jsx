@@ -11,6 +11,27 @@ const Traveller = () => {
   const [place, changePlace] = useState("Hyderabad");
 
   useEffect(() => {
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+    function successCallback(position) {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      fetch(
+        `https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}&api_key=668ca96ac788e622575606mfa5b1634`
+      ).then((res) => {
+        res.json().then((result) => {
+          changePlace(result.address.city);
+        });
+      });
+    }
+
+    function errorCallback(err) {
+      console.log(err);
+    }
+  }, []);
+
+  useEffect(() => {
     changeFetchStatus("loading");
     const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=2a4b4962a62b47f5b47162651240407&q=${place}&days=10&aqi=yes&alerts=yes`;
     const fetchWeatherData = async () => {
