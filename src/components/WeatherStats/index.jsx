@@ -47,17 +47,18 @@ const WeatherStats = ({ place }) => {
         return (
           <div className="firstCard">
             <h2 className="todaysWeatherHeading">:: Current Weather ::</h2>
+            <p className="infoParass">{place}</p>
             <div className="actualWeatherr">
-              <p className="infoParas">{`Temp ${temp_c} °C / ${temp_f} °F`}</p>
+              <p className="infoParass">{`Temp ${temp_c} °C / ${temp_f} °F`}</p>
               <img className="currentTempIcon" src={currentImage} />
             </div>
-            <p className="infoParas">{`Clouds ${cloud}%`}</p>
-            <p className="infoParas conditionTitle">Weather Condition</p>
-            <p className="infoParas conditon">{condition}</p>
-            <p className="infoParas">Humidity {humidity}</p>
-            <p className="infoParas">{`Wind ${wind_kph} kph (${wind_dir})`}</p>
-            <p className="infoParas">{`Chance of Rain Today ${chanceOfRain}%`}</p>
-            <p className="infoParas update">{`Last Updated ${last_updated}`}</p>
+            <p className="infoParass">{`Clouds ${cloud}%`}</p>
+            <p className="infoParass conditionTitle">Weather Condition</p>
+            <p className="infoParass conditon">{condition}</p>
+            <p className="infoParass">Humidity {humidity}</p>
+            <p className="infoParass">{`Wind ${wind_kph} kph (${wind_dir})`}</p>
+            <p className="infoParass">{`Chance of Rain Today ${chanceOfRain}%`}</p>
+            <p className="infoParass update">{`Last Updated ${last_updated}`}</p>
           </div>
         );
       }
