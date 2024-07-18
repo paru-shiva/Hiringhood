@@ -10,7 +10,7 @@ const WeeklyStats = ({ place }) => {
 
   useEffect(() => {
     changeFetchStatus("loading");
-    const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=2a4b4962a62b47f5b47162651240407&q=${place}&days=10&aqi=yes&alerts=yes`;
+    const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=34c7c787eeae43ccaf993155241807&q=${place}&days=10&aqi=yes&alerts=yes`;
     const fetchWeatherData = async () => {
       const response = await fetch(baseUrl);
       if (response.ok === true) {

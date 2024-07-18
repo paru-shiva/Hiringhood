@@ -57,6 +57,7 @@ const Farmer = () => {
       const { avgtemp_c, daily_chance_of_rain, avghumidity, maxwind_mph } =
         weatherData.forecast.forecastday[0].day;
       const { sunrise } = weatherData.forecast.forecastday[0].astro;
+      const date = weatherData.location.localtime.slice(0, 10);
 
       switch (fetchStatus) {
         case "loading":
@@ -67,6 +68,7 @@ const Farmer = () => {
           return (
             <div className="instructionsCard">
               <h2 className="secHeading">Hello Dear Farmer</h2>
+              <h3 style={{ color: "cyan" }}>({date})</h3>
               <h2 className="custInst">
                 <u>** Instructions Customized For You **</u>
               </h2>
